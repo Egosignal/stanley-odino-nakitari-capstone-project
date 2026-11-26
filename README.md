@@ -33,6 +33,10 @@ java -cp out sacco.SaccoManager
 
 The program reads `members.csv` if it exists. It creates or updates that file as member/account data changes and on exit. `transactions.txt` is append-only. Back up both files before editing them manually.
 
+## Optional demo data
+
+The root `members.csv` is intentionally header-only. To start with three demo members and preloaded account and transaction history, copy both files from `sample-data/` into the repository root before running the program. The demo National IDs and account numbers are fictional. To return to a clean start, replace the root `members.csv` with its header-only version and remove the root `transactions.txt`.
+
 The CSV reader supports quoted fields and commas in names. National IDs are used only for duplicate checks and stored in `members.csv`; they are not written to the transaction log.
 
 ## Project files
@@ -40,5 +44,6 @@ The CSV reader supports quoted fields and commas in names. National IDs are used
 - `src/main/java/sacco/`: domain model, console workflow, CSV support, and persistence
 - `members.csv`: header-only starting file
 - `transactions.txt`: append-only audit log, created by the application when needed
+- `sample-data/`: optional demo copies of `members.csv` and `transactions.txt`
 
 This is a student learning project. It is not connected to a real SACCO or payment service.
