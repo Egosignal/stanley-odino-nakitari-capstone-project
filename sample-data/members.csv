@@ -1,0 +1,5 @@
+memberId,name,nationalId,accountType,accountNumber,balance
+"DEMO-001","Stanlee Odino","DEMO-NID-001","Savings","ACC-DEMO-001-S","12000.0"
+"DEMO-001","Stanlee Odino","DEMO-NID-001","Loan","ACC-DEMO-001-L","5000.0"
+"DEMO-002","Makena Makuku","DEMO-NID-002","Savings","ACC-DEMO-002-S","8500.0"
+"DEMO-003","Presscott Mafuma","DEMO-NID-003","Savings","ACC-DEMO-003-S","22000.0"
